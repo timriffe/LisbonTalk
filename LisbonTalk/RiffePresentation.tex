@@ -1,0 +1,272 @@
+%% 
+%%	This is file 'beamer_sample.tex'
+%%	according to an MPIDR's PowerPoint template (?)
+%%	
+%%	by Eric Naujoks
+%%
+%%	Problems, bugs and comments to 
+%%	naujoks@demogr.mpg.de
+%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	Praelegomena								%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	- Make sure that you use utf8-encoding for all your .tex-files!!! (TeXnicCenter since version 2.0)
+%%	- TeXnicCenter update: MPIDR intranet > Hard- & Sortfware > Software > Script and text editors > TeXnicCenter
+
+\documentclass[20pt]{beamer}
+
+\usepackage[ngerman,english]{babel}
+\usepackage{tikz}
+\usepackage[normalem]{ulem}
+\geometry{paperwidth=10in, paperheight=7.5in}
+\usepackage{animate}
+\usepackage{array}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[mpidr]{./mpidr/beamerthemeMPIDR}
+
+%% Declaring title and author
+\title{Demographic time, \\metabolism, and structure\\ \\\large{Comments on
+Portugal and the EU}\\ \\
+\small{V congreso Portugu\^{e}s de demografia} \\
+\small{6-7 October, 2016}}
+\subtitle{Tim Riffe}		%%
+
+%%	the institute's logo
+\renewcommand{\mylogo}{\includegraphics[width=4.7in]{mpidr_logo_colour_en}}
+\usepackage{color}
+\definecolor{mygray}{rgb}{0.8,0.8,0.8}
+
+\defbeamertemplate{description item}{align left}{\insertdescriptionitem\hfill}
+%%	should be the very last package to be loaded
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	Beginning of the document	%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%	titlepage - fixed frame:
+%%	========================
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+%-------------------
+
+\begin{frame}
+\frametitle{Expert opinions (anonymous)}
+\begin{itemize}[<+->]
+  \item What is the average length of life in the EU now (period)?
+  \item What will the average length of life be in 2100 in the EU (period)?
+  \item What will the average length of life be for babies born in the EU in
+  2020 (cohort)?
+\end{itemize}
+\end{frame}
+
+%-------------------
+
+\begin{frame}
+\frametitle{Growth}
+\begin{itemize}[<+->]
+   \item Migration aside, is the EU population growing, shrinking, or
+stationary, according to period mortality and fertility rates right now?
+   \item What about if we include migration?
+\end{itemize}
+\end{frame}
+
+%-------------------
+
+\begin{frame}
+\frametitle{Alternative perspectives on growth}
+\vspace{-2em}
+\begin{center}
+\includegraphics[scale=.8]{Figures/LeeScience.png}
+\end{center}
+\vspace{-1.5em}
+Lee, Mason, \& NTA team (2014)
+\end{frame}
+
+%-------------------
+
+\begin{frame}
+\frametitle{Alternative perspectives on growth}
+\vspace{-2em}
+\begin{center}
+\includegraphics[scale=.7]{Figures/Goldstein2015.png}
+\end{center}
+\end{frame}
+
+%-------------------
+
+\begin{frame}
+\frametitle{Alternative perspectives on growth}
+\vspace{-2em}
+\begin{center}
+\includegraphics[scale=.8]{Figures/growingshort.pdf}
+\end{center}
+\small{
+1900 Sweden lifetable pop growing at 1\% per annum
+}
+\end{frame}
+
+%-------------------
+
+\begin{frame}
+\frametitle{Alternative perspectives on growth}
+\vspace{-2em}
+\begin{center}
+\includegraphics[scale=.8]{Figures/shrinkinglong.pdf}
+\end{center}
+\small{
+2014 Sweden lifetable pop shrinking at 1\% per annum
+}
+\end{frame}
+
+%-------------------
+
+\begin{frame}
+\frametitle{Alternative perspectives on growth}
+\vspace{-2em}
+\begin{center}
+\includegraphics[scale=.8]{Figures/popcompare.pdf}
+\end{center}
+\small{
+both stable populations
+}
+\end{frame}
+
+%-------------------
+
+\begin{frame}
+\frametitle{Alternative perspectives on growth}
+\vspace{-2em}
+\begin{center}
+\includegraphics[scale=.7]{Figures/Henry1965.png}
+\end{center}
+Henry (1965) Population. Vol. 20, No. 1 
+\end{frame}
+
+%-------------------
+
+\begin{frame}
+\frametitle{Units}
+\begin{center}
+\includegraphics[scale=.9]{Figures/Scale.pdf}
+\end{center}
+\end{frame}
+
+%-------------------
+
+\begin{frame}
+\frametitle{Counting years of life}
+\begin{center}
+\includegraphics[scale=.6]{Figures/hourglass.pdf}
+\end{center}
+\end{frame}
+
+%-------------------
+
+\begin{frame}
+\frametitle{Counting years of life}
+\begin{center}
+\includegraphics[scale=.6]{Figures/hourglasslivedleft.pdf}
+\end{center}
+\end{frame}
+
+%-------------------
+
+\begin{frame}
+\frametitle{Alternative perspectives on aging}
+\begin{center}
+\includegraphics[scale=.7]{Figures/Sanderson2005.png}
+\end{center}
+\end{frame}
+
+%-------------------
+
+\begin{frame}
+\frametitle{Alternative perspectives on aging}
+\begin{center}
+\includegraphics[scale=.7]{Figures/Brouard1986.png}
+\end{center}
+\end{frame}
+%-------------------
+
+\begin{frame}
+\frametitle{Alternative perspectives on aging} 
+re Brouard: homeostasis in the remaining-years pyramid is possible for extended
+periods. Animate, if there's time.
+\end{frame}
+
+%-------------------
+
+\begin{frame}
+\frametitle{Alternative perspectives on aging}
+\begin{center}
+\includegraphics[scale=.7]{Figures/Sanderson2010.png}
+\end{center}
+\end{frame}
+
+%-------------------
+
+\begin{frame}
+\frametitle{Alternative perspectives on aging}
+\begin{center}
+\includegraphics[scale=.7]{Figures/Riffe2016.png}
+\end{center}
+Riffe et. al. VYPR v15 (in press)
+\end{frame}
+
+
+\begin{frame}{A simple illustration}
+\begin{center}
+ \includegraphics[width=\linewidth]{Figures/Japan1970.pdf}
+ %\includegraphics[width=.5\linewidth]{Figures/Japan2010.pdf}
+\end{center}
+\end{frame}
+
+\begin{frame}{A simple illustration}
+\begin{center}
+ %\includegraphics[width=.5\linewidth]{Figures/Japan1970.pdf}
+ \includegraphics[width=\linewidth]{Figures/Japan2010.pdf}
+\end{center}
+\end{frame}
+
+%-------------------
+\begin{frame}
+\frametitle{Hands-on in \texttt{R} and maybe spreadsheets}
+\begin{enumerate}
+  \item Sanderson \& Scherbov adjusted old-age indicator
+  \item Brouard remaining-years pyramid, animated
+  \item Goldstein turnover (Lotka's $r$, etc.)
+  \item Henry, either historical or with assumptions
+  \item Riffe, morbidity assumptions.
+\end{enumerate}
+\end{frame}
+
+%-------------------
+\begin{frame}
+\frametitle{DropBox Link}
+\url{https://goo.gl/Yv6kgw}
+\end{frame}
+
+
+%-------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%	End of the document			%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+
+
+
+
+
+
+
+
+
+
